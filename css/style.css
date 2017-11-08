@@ -1,0 +1,378 @@
+/*menu file*/
+
+/*
+
+	0.font
+	1.General settings
+	2.header & nav
+	3.slider
+	4.about me
+	5.services
+*/
+
+
+
+
+
+
+
+
+
+
+/*-------------0.font---------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------1.General settings---------------*/
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #fff;
+}
+
+a{text-decoration: none;}
+
+.clear{clear: both;}
+
+.container
+{
+	margin:0 auto;
+	max-width: 1187px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------2.header & nav---------------*/
+
+header 
+{
+	background-color: #02918c;
+	padding:15px 0;
+}
+
+.logo
+{
+	float: left;
+	color: #cfc91d;
+	font-weight: 800;
+	font-size: 26.18px;
+}
+
+.logo_part{color: #fff;}
+
+
+.header_menu{float: right;}
+
+.header_menu li
+{
+	display: inline-block;
+	margin-left: 51px;
+}
+
+.header_menu li:first-child{margin-left: 0;}
+
+.header_menu li a
+{
+	color:#fff;
+	font-size: 12px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.header_menu li a:hover{text-decoration: underline;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------3.slider---------------*/
+
+.slider
+{
+	background-image:url(../img/bg_slider.jpg);
+	background-size: cover;
+	padding-bottom: 209px;
+}
+
+.slider h2
+{
+	color:#fff;
+	font-size: 30px;
+	text-align: center;
+	padding-top:209px;
+}
+
+.slider h1
+{
+	color:#fff;
+	font-size: 68px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing:22px;
+}
+
+.slider p
+{
+	color:#fff;
+	font-size: 18px;
+	text-align: center;
+}
+
+.slider p:after
+{
+	content: "";
+	display: block;
+	width: 108px;
+	height: 25px;
+	background-image: url(../img/quotation.png);
+	margin: 0 auto;
+	margin-top:51px;
+}
+
+.slider button
+{
+	display: block;
+	margin: 0 auto;
+	margin-top:50px;
+	background-color: #cfc91d;
+	border: none;
+	width: 196px;
+	height: 46px;
+	font-size: 14px;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing:1.5px;
+	cursor: pointer;
+}
+
+.slider button:hover{background-color: #F3EC22}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------4.about me---------------*/
+
+.about_me h2 , 
+.services h2
+{
+	font-size: 46px;
+	text-align: center;
+	color:#02918c;
+	text-transform: uppercase;
+	padding-top: 94px;
+}
+
+.about_me h2:after
+{
+	content: "~~~~~~~~ :: ~~~~~~~~";
+	display: block;
+	margin: 0 auto;
+	font-size: 16px;
+	color:#7e8287;
+	margin-top:18px;
+	font-weight: normal;
+}
+
+.about_me p
+{
+	text-align: center;
+	max-width: 877px;
+	margin: 0 auto;
+	color: #898c91;
+	margin-top: 26px;
+	margin-bottom: 83px
+}
+
+.text_bold_p
+{
+	font-size: 23px;
+	font-weight: bold;
+	font-weight: normal; 
+}
+
+.plus
+{
+	float: left;
+	width: 296px;
+	height: 252px;
+	border-left: 1px solid #d9dbdb;
+}
+
+.plus:first-child{border-left: none;}
+
+.all_pluses img ,
+.services_plus img
+{
+	display: block;
+	margin: 0 auto;
+	margin-top: 35px;
+}
+
+.all_pluses .bold_big_text ,
+.services_plus .bold_big_text
+{
+	color: #7e8287;
+	font-weight: 800;
+	margin: 30px 0;
+}
+
+.all_pluses .text_about ,
+.services_plus .text_about
+{
+	width: 161px;
+	font-size: 11px;
+	font-weight: 600;
+	margin-bottom: 0;
+	color: #898c91;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------5.services---------------*/
+.services
+{
+	min-height: 728px;
+	background-color: #f0f0e8;
+	margin-top: 99px;
+}
+
+.services .container{position: relative;}
+
+.all_services
+{
+	width: 50%;
+	float: left;
+}
+
+.all_services .header_services, 
+.all_services .p_big_services{margin-left: 45px;}
+
+.all_services .header_services
+{
+	text-align: left;
+}
+
+.all_services .header_services:after 
+{
+	content: "~~~~~ :: ~~~~~";
+	display: block;
+	font-size: 16px;
+	color:#7e8287;
+	margin:18px 0;
+	font-weight: normal;
+
+}
+
+.all_services .p_big_services
+{
+	margin-right: 80px;
+	font-size: 15px;
+	color:#878b8f;
+}
+
+.bg_services 
+{
+	right: -42px;
+	position: absolute;
+}
+
+.services_plus
+{
+	width: 164px;
+	float: left;
+	margin-top:60px;
+	margin-left: 45px;
+	max-height: 159px;
+}
+
+
+
+.services_plus img{margin: 0;}
+
