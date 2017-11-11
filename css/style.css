@@ -8,6 +8,9 @@
 	3.slider
 	4.about me
 	5.services
+	6.my work
+	7.contact
+	8.footer
 */
 
 
@@ -56,11 +59,14 @@ a{text-decoration: none;}
 
 .clear{clear: both;}
 
-.container
+.container ,
+.container_big
 {
 	margin:0 auto;
 	max-width: 1187px;
 }
+
+.container_big{max-width: 1280px;}
 
 
 
@@ -220,7 +226,9 @@ header
 /*-------------4.about me---------------*/
 
 .about_me h2 , 
-.services h2
+.services h2 , 
+.my_work h2 ,
+.contact h2
 {
 	font-size: 46px;
 	text-align: center;
@@ -229,7 +237,9 @@ header
 	padding-top: 94px;
 }
 
-.about_me h2:after
+.about_me h2:after ,
+.my_work h2:after ,
+.contact h2:after
 {
 	content: "~~~~~~~~ :: ~~~~~~~~";
 	display: block;
@@ -240,7 +250,9 @@ header
 	font-weight: normal;
 }
 
-.about_me p
+.about_me p ,
+.my_work p ,
+.contact p
 {
 	text-align: center;
 	max-width: 877px;
@@ -376,3 +388,206 @@ header
 
 .services_plus img{margin: 0;}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------6.my work---------------*/
+
+.my_work p ,
+.contact p
+{
+	max-width: 678px;
+	word-spacing: 5px;
+}
+
+.gallery
+{
+	width: 1280px;
+}
+
+.gallery-photo
+{
+	width: 320px;
+	height: 228px;
+	float: left;
+	background-size: cover;
+}
+
+.photo_g_1{background-image:url(../img/photo_g_1.jpg);}
+.photo_g_2{background-image:url(../img/photo_g_2.jpg);}
+.photo_g_3{background-image:url(../img/photo_g_3.jpg);}
+.photo_g_4{background-image:url(../img/photo_g_4.jpg);}
+.photo_g_5{background-image:url(../img/photo_g_5.jpg);}
+.photo_g_6{background-image:url(../img/photo_g_6.jpg);}
+.photo_g_7{background-image:url(../img/photo_g_7.jpg);}
+.photo_g_8{background-image:url(../img/photo_g_8.jpg);}
+
+
+
+/*show text and block*/
+
+.gallery-show-block
+{
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.gallery-show-block:hover
+{
+	opacity: 1;
+}
+
+.gallery-show-all 
+{
+    background-color: rgba(40,161,157,.9);
+    width: 266px;
+    height: 196px;
+    margin: 0px auto;
+    position: relative;
+    top: 17px;
+}
+
+.gallery-show-block_heading ,
+.gallery-show-block_para
+{
+	text-align: center;
+	color:#fff !important;
+}
+
+
+.gallery-show-block_heading
+{
+	font-size: 16px;
+	padding-top: 56px !important;
+}
+.gallery-show-block_para
+{
+	font-size: 13px;
+	margin-top: 16px !important;
+	margin-bottom: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------7.contact---------------*/
+.contact p{word-spacing: 1px;}
+
+/*form*/
+
+.contact-bg-form
+{
+	background-color: #0b0b0b;
+	border-top: 1px solid #141414;
+	padding-bottom: 69px;
+}
+
+.contact-form-inp , 
+.contact-form-inp_2 , 
+.contact-form-button
+{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 65px;
+}
+
+.contact-form-inp , 
+.contact-form-inp_2 
+{
+	background:none;
+	border: none;
+	border-bottom: 1px solid #898989;
+	outline: none;
+	padding-bottom: 16px;
+	color: white
+}
+
+.contact-form-inp{width: 636px;}
+.contact-form-inp_2{width: 919px;}
+
+.contact-form-button
+{
+	background-color: #cfc91d;
+	width: 196px;
+	height: 47px;
+	border: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 800;
+}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------8.footer---------------*/
+
+footer
+{
+	background-color: #000;
+	text-align: center;
+}
+
+.footer_par
+{
+	color:#595c5f;
+	line-height: 35px;
+	font-size: 12px;
+	text-transform: uppercase;
+}
