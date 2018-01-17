@@ -5,22 +5,23 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
-	<header>
-		<nav class = "container">
-			<span class = "logo"><span class = "logo_part">MY</span>FOLIO</span>
-			<ul class = "header_menu">
-				<li><a href = "#">home</a></li>
-				<li><a href = "#">about ME</a></li>
-				<li><a href = "#">services</a></li>
-				<li><a href = "#">MY work</a></li>
-				<li><a href = "#">contact ME</a></li>
-			</ul>
+<body id = "jheader">
+		<header id="header">
+			<nav class = "container">
+				<span class = "logo"><span class = "logo_part">MY</span>FOLIO</span>
+				<ul class = "header_menu">
+					<li><a class="js_header_link" href = "#jheader">home</a></li>
+					<li><a class="js_header_link" href = "#about">about ME</a></li>
+					<li><a class="js_header_link" href = "#services">services</a></li>
+					<li><a class="js_header_link" href = "#my_work">MY work</a></li>
+					<li><a class="js_header_link" href = "#contact">contact ME</a></li>
+				</ul>
 
-			<!-- clearfix -->
-			<div class = "clear"></div>
-		</nav>
-	</header>
+				<!-- clearfix -->
+				<div class = "clear"></div>
+			</nav>
+		</header>
+
 	<section class = "slider">
 		<div class = "container">
 			<h2>Lorem ipsum dolor sit iusmod tempor</h2>
@@ -29,7 +30,7 @@
 			<button>KNOW MORE</button>
 		</div>
 	</section>
-	<section class = "about_me">
+	<section id="about" class = "about_me">
 		<div class = "container">
 			<h2>about me</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <span class = "text_bold_p">quis nostrud exercitation ullamco</span> laboris nisi ut aliquip ex ea 
@@ -67,7 +68,7 @@
 
 		</div>
 	</section>
-	<section class = "services">
+	<section id="services" class = "services">
 		<div class="container">
 			<div class = "all_services">
 				<h2 class = "header_services">SERVICES</h2>
@@ -107,7 +108,7 @@
 			<div class = "clear"></div>
 		</div>
 	</section>
-	<section class = "my_work">
+	<section id="my_work" class = "my_work">
 		<div class = "container">
 			<h2 class = "header_services">MY WORK</h2>
 				<p class = "p_big_services">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
@@ -209,7 +210,7 @@
 				</div>
 		</div>
 	</section>
-	<section class = "contact">
+	<section id="contact" class = "contact">
 		<div class = "container">
 			<h2>CONTACT ME</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
@@ -230,5 +231,9 @@
 	<footer>
 		<p class = "footer_par">© MYFOLIO</p>
 	</footer>
+
+	<!-- scripts -->
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

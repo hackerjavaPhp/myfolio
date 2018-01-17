@@ -125,6 +125,13 @@ header
 
 .header_menu li a:hover{text-decoration: underline;}
 
+.js_fixed_header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 666;
+}
 
 
 
