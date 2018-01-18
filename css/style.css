@@ -11,6 +11,7 @@
 	6.my work
 	7.contact
 	8.footer
+	9.modal
 */
 
 
@@ -598,3 +599,77 @@ footer
 	font-size: 12px;
 	text-transform: uppercase;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 14. Modals
+===========================*/
+
+.overlay {
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, .7);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    display: none;
+}
+
+.modal {
+    width: 300px;
+    padding: 20px;
+
+    background: #fff;
+    text-align: center;
+    border: 7px solid #02918C;
+    border-radius: 10px;
+
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    z-index: 1000;
+    margin-left: -177px;
+    
+    display: none;
+}
+
+.openModal{
+	overflow-y: hidden;
+	padding-right: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -37,5 +37,25 @@
 
 		});
 
+		// modals
+
+		$(".js-show-modal").on("click", function(e){
+
+			e.preventDefault();
+
+			$(".js-modal, #js-overlay").fadeIn();
+			$("body").addClass("openModal");
+
+		});
+
+		$(".js-modal-close, #js-overlay").on("click", function(e){
+
+			e.preventDefault();
+
+			$(".js-modal, #js-overlay").fadeOut();
+			$("body").removeClass("openModal");
+
+		});
+
 
 })
